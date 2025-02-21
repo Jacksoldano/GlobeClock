@@ -2,7 +2,7 @@
 
 The guide to the CAD used in this project can be found here - https://makerworld.com/en/models/1128817#profileId-1128671
 
-![hippo](https://makerworld.bblmw.com/makerworld/model/USb237c9d6ccaea0/design/2025-02-20_dfdb1118f24a8.gif?x-oss-process=image/resize,w_1920/format,webp)
+![hippo]([https://makerworld.bblmw.com/makerworld/model/USb237c9d6ccaea0/design/2025-02-20_dfdb1118f24a8.gif?x-oss-process=image/resize,w_1920/format,webp](https://makerworld.bblmw.com/makerworld/model/USb237c9d6ccaea0/design/2025-02-21_d5daae956518f.gif?x-oss-process=image/resize,w_1000/format,webp))
 
   This Code is used in Globe Clock Project and uses an ESP32 XIAOC3
   It gets the current time from the web then calculates the orientation
