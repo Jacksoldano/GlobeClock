@@ -1,9 +1,24 @@
-void getTIME(){
-  /*
-  while(!timeClient.update()) {
-    timeClient.forceUpdate();
-  }*/
+/*****************************************************************************
+  Author:         Jack R Soldano
+  Release Date:   2025-04-01
+  Link:           Project details at https://github.com/Jacksoldano/GlobeClock
+  File Name:      WebTime.ino
+  Version:        02
 
+  Description
+  This Code is used in Globe Clock Project and uses an ESP32 XIAOC3
+  It gets the current time from the web then calculates the orientation
+  that the globe should be, effectively working out the current zenith of
+  the sun relative to the systems "zero" position.
+
+  - Just used to get the current time and format into integers
+*****************************************************************************/
+
+void getTIME(){
+  // Requests time from 'timeClient'
+  // splits string into hour, seconds & minutes
+  // Converts strings to integers
+  // generates current seconds in the day based on hours, seconds & minutes and stores in 'currentTIMEseconds'
   timeClient.forceUpdate();
 
   hourS = timeClient.getHours();
@@ -36,8 +51,4 @@ void getTIME(){
   currentTIMEseconds = hour2sec + minute2sec + second2second;
   Serial.print("currentTIMEseconds: ");
   Serial.println(currentTIMEseconds);
-
-  currentTIMEsecondsminusZero = currentTIMEseconds;
-  Serial.print("currentTIMEsecondsminusZero: ");
-  Serial.println(currentTIMEsecondsminusZero);
 }
