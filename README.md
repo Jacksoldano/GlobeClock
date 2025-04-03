@@ -9,16 +9,22 @@ The guide to the CAD used in this project can be found here - https://makerworld
   that the globe should be, effectively working out the current zenith of
   the sun relative to the systems "zero" position.
 
-  This project uses the following
-    WiFi.h
-    NTPClient.h
-    WiFiUdp.h
-    Stepper.h
-    FastLED.h
+  This project uses the following,
+    - WiFi.h - https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/
+    - NTPClient.h - https://github.com/arduino-libraries/NTPClient
+    - WiFiUdp.h - https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/
+    - Stepper.h - https://github.com/arduino-libraries/Stepper
+    - FastLED.h - https://github.com/FastLED/FastLED
 
-  XIAO_Globe_Clock_01.ino
-  - Defines all vars used
-  - Setup pins
+  XIAO_Globe_Clock.ino
+    - Defines libs required;
+    - WiFi.h - https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/
+    - NTPClient.h - https://github.com/arduino-libraries/NTPClient
+    - WiFiUdp.h - https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/
+    - Stepper.h - https://github.com/arduino-libraries/Stepper
+    - FastLED.h - https://github.com/FastLED/FastLED
+  - Define all values used
+  - Setup Pins & functions
   - Main loop
 
   LEDS.ino 
@@ -35,3 +41,6 @@ The guide to the CAD used in this project can be found here - https://makerworld
 
   WiFi.ino
   - Just used for wifi setup
+
+To use this 
+
